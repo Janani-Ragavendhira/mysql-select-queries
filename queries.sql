@@ -40,60 +40,10 @@ SELECT ename  FROM empl WHERE ename LIKE '__A%';
 -- Write a query to display the name of an employee whose name contains "T" as last alphabet? 
 SELECT ename FROM empl WHERE ename LIKE '%T';
 
-
-
-
-
- 
-
- 
-
-
-
- 8698 SALESMAN 8698   8839 
-
-1600.00
-300.00 30
- 1250.00
-500.00
-30
-2985.00 NULL
-20
-8654
-
-SALESMAN 8698 
-1250.00
-1400.00
-30
-8698
-
-MANAGER 8839
-
-2850.00 NULL
-30
-8882
-SHIVANSH
-MANAGER 8839
-
-2450.00
-NULL
-10
-8888
-
- 8566
-
-3000.00 NULL
-20
-8839
-
- NULL
-
-5000.00
-NULL
-10
-8844 
-SALESMAN 8698
-
-1500.00
-0.00
-30
+-- Create table employee for task 2
+create table employee (
+  `empcode` int not null primary key,
+  `empname` varchar(60) not null,
+  `empage` int null default null,
+  `esalary` decimal(11,2) null default null
+);
